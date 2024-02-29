@@ -52,9 +52,22 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+
+  environment.sessionVariables = {
+    LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib";
+  };
+
+
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     git
+    xsel
+    python310
+    python311
+    python312
+    nodejs_21
+    libstdcxx5
+    gcc-unwrapped
   ];
   services.openssh = {
 	enable =  true;
