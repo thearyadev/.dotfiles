@@ -87,6 +87,7 @@ in
     neofetch
     sddm-chili-theme
     unstable.pyprland
+    gcc
   ];
   fonts.packages = with pkgs;
     [ (nerdfonts.override { fonts = [ "FiraCode" ]; }) ];
