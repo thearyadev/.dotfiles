@@ -6,11 +6,11 @@
   home.stateVersion = "23.11";
   home.sessionVariables = { };
   imports = [
-    ./legacy/dotfiles.nix
+    ../../legacy/dotfiles.nix
     ./packages.nix
-    ./hyprland/hyprland.nix
-    ./waybar/waybar.nix
-    ./kitty/kitty.nix
+    ../../modules/hyprland/hyprland.nix
+    ../../modules/waybar/waybar.nix
+    ../../modules/kitty/kitty.nix
   ];
 
   programs.home-manager.enable = true;
