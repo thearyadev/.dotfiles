@@ -3,10 +3,14 @@
     pkgs.playerctl
     pkgs.nixfmt
     pkgs.htop
-    pkgs.cinnamon.nemo
+    pkgs.xfce.thunar
 
-    (pkgs.writeShellScriptBin "my-hello2" ''
-      echo "Hello, ${config.home.username}!"
+    (pkgs.writeShellScriptBin "build-nixos" ''
+      nixos-rebuild switch --flake ./#default --impure
+    '')
+
+    (pkgs.writeShellScriptBin "build-home" ''
+      home-manager switch --flake . --impure
     '')
   ];
 }
