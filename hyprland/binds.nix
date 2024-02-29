@@ -52,6 +52,10 @@
     " , XF86AudioNext, exec, playerctl next"
     " , XF86AudioNext, exec, playerctl previous"
 
+
+    # Pyprland
+    "$super, Z, exec, pypr toggle terminal && hyprctl dispatch bringactivetotop"
+
   ];
   # Resize Window with Super + Mouse Drag
   bindm = [ "$super, mouse:272, movewindow" "$super, mouse:273, resizewindow" ];

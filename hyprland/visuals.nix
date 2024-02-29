@@ -40,5 +40,12 @@
     mfact = 0.5;
   };
 
-  windowrulev2 = [ "opacity 0.85 0.85, class:^(kitty)$" ];
+  windowrulev2 = [ 
+    "opacity 0.85 0.85, class:^(kitty)$"
+
+    "float,$scratchpad"
+    "$scratchpadsize,$scratchpad"
+    "workspace special silent,$scratchpad"
+    "center,$scratchpad"
+  ];
 }

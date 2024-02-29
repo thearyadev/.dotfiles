@@ -3,6 +3,9 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, inputs, ... }:
+let
+  unstable = import <nixos-unstable> {config = { allowUnfree = true; };};
+in 
 
 {
   imports = [ # Include the results of the hardware scan.
@@ -83,6 +86,7 @@
     rustup
     neofetch
     sddm-chili-theme
+    unstable.pyprland
   ];
   fonts.packages = with pkgs;
     [ (nerdfonts.override { fonts = [ "FiraCode" ]; }) ];

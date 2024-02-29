@@ -7,6 +7,8 @@ in {
     enable = true;
     settings = {
       "$super" = "SUPER";
+      "$scratchpadsize" = "size 100% 100%";
+      "$scratchpad" = "class:^(dropterm)$";
       inherit (visuals) general decoration misc animations master windowrulev2;
       inherit (binds) bind bindm;
 
