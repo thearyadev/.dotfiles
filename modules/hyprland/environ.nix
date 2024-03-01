@@ -1,8 +1,8 @@
 [
-  "libva_driver_name,nvidia"
-  "xdg_session_type,wayland"
-  "gbm_backend,nvidia-drm"
-  "__glx_vendor_library_name,nvidia"
-  "wlr_no_hardware_cursors,1"
-  "xcursor_size,24"
+  "LIBVA_DRIVER_NAME,nvidia"
+  "XDG_SESSION_TYPE,wayland"
+  "GBM_BACKEND,nvidia-drm"
+  "__GLX_VENDOR_LIBRARY_NAME,nvidia"
+  "WLR_NO_HARDWARE_CURSORS,1"
+  "XCURSOR_SIZE,24"
 ]
