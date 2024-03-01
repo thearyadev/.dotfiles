@@ -26,8 +26,8 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnos
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
--- vim.cmd [[autocmd VimEnter * NvimTreeOpen]]
--- vim.cmd [[autocmd VimEnter * wincmd p]]
+vim.cmd [[autocmd VimEnter * NvimTreeOpen]]
+vim.cmd [[autocmd VimEnter * wincmd p]]
 
 vim.keymap.set("n", "<leader>n", ":ASToggle<CR>", {})
 vim.keymap.set("n", "<leader>v", ":lua require('nvterm.terminal').new 'vertical'<CR>")

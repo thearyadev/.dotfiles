@@ -23,7 +23,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-
+  virtualisation.docker.enable = true;
   # Set your time zone.
   time.timeZone = "America/Toronto";
   users.users.arya.shell = pkgs.fish;
@@ -40,9 +40,10 @@
   users.users.arya = {
     isNormalUser = true;
     description = "Arya Kothari";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "docker" "networkmanager" "wheel"];
     packages = with pkgs; [];
   };
+
   programs.fish.enable = true;
   # Enable automatic login for the user.
   services.getty.autologinUser = "arya";
