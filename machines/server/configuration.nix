@@ -32,9 +32,9 @@
   programs.fish.enable = true;
   users.users.arya.shell = pkgs.fish;
   networking.networkmanager.enable = true;
-  networking.interfaces.ens18.ipv4.addresses = [
-    { address = "192.168.1.107"; prefixLength = 24; }
-  ];
+  #networking.interfaces.ens18.ipv4.addresses = [
+  #  { address = "192.168.1.107"; prefixLength = 24; }
+  #];
   # Set your time zone.
   time.timeZone = "America/Toronto";
 
@@ -69,16 +69,16 @@
 	vim
 	git
   ];  
-  filesystems = {
-    "/mnt/skies" = {
-      device = "192.168.1.17:/mnt/skies/skies-data";
-      fsType = "nfs";
-    };
-   "/mnt/vega" = {
-      device = "192.168.1.17:/mnt/vega/vega-data";
-      fsType = "nfs";
-    };
-  };
+#  fileSystems = {
+#    "/mnt/skies" = {
+#      device = "192.168.1.17:/mnt/skies/skies-data";
+#      fsType = "nfs";
+#    };
+#   "/mnt/vega" = {
+#      device = "192.168.1.17:/mnt/vega/vega-data";
+#      fsType = "nfs";
+#    };
+#  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
