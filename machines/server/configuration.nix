@@ -81,6 +81,22 @@
       fsType = "nfs";
     };
   };
+  services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.nvidia = {
+    modesetting.enable = true;
+    powerManagement.enable = false;
+    powerManagement.finegrained = false;
+    open = false;
+    nvidiaSettings = true;
+    package = config.boot.kernelPackages.nvidiaPackages.production;
+  };
+
+  boot.kernelParams = [
+    "module_blacklist=amdgpu"
+    "module_blacklist=i2c_nvidia_gpu"
+    "nvidia-drm.modeset=1"
+    "initcall_blacklist=simpledrm_platform_driver_init"
+  ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
