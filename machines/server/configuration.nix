@@ -20,7 +20,9 @@
       PasswordAuthentication = true;
     };
   };
-  virtualisation.docker.enable = true;
+  virtualisation.docker = {
+    enable = true;
+  };
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -93,10 +95,10 @@
   # services.openssh.enable = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # Open ports in the firewall.
-  #networking.firewall.allowedTCPPorts = [ 22 ];
+  networking.firewall.allowedTCPPorts = [ 22 ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
-  networking.firewall.enable = false;
+  #networking.firewall.enable = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
