@@ -9,6 +9,7 @@ in
     pkgs.fish
     pkgs.neovim
     pkgs.gcc
+    pkgs.bash
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
     '')
