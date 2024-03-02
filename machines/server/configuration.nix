@@ -69,17 +69,16 @@
 	vim
 	git
   ];  
-#  fileSystems = {
-#    "/mnt/skies" = {
-#      device = "192.168.1.17:/mnt/skies/skies-data";
-#      fsType = "nfs";
-#    };
-#   "/mnt/vega" = {
-#      device = "192.168.1.17:/mnt/vega/vega-data";
-#      fsType = "nfs";
-#    };
-#  };
-
+  fileSystems = {
+    "/mnt/skies" = {
+      device = "192.168.1.17:/mnt/skies/skies-data";
+      fsType = "nfs";
+    };
+   "/mnt/vega" = {
+      device = "192.168.1.17:/mnt/vega/vega-data";
+      fsType = "nfs";
+    };
+  };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
