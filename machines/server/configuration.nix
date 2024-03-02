@@ -20,6 +20,7 @@
       PasswordAuthentication = true;
     };
   };
+  virtualisation.docker.enable = true;
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -50,7 +51,7 @@
   users.users.arya = {
     isNormalUser = true;
     description = "Arya Kothari";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "docker" "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
 
@@ -67,7 +68,17 @@
   #  wget
 	vim
 	git
-  ];
+  ];  
+  filesystems = {
+    "/mnt/skies" = {
+      device = "192.168.1.17:/mnt/skies/skies-data";
+      fsType = "nfs";
+    };
+   "/mnt/vega" = {
+      device = "192.168.1.17:/mnt/vega/vega-data";
+      fsType = "nfs";
+    };
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
