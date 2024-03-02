@@ -28,6 +28,8 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Enable networking
+  programs.fish.enable = true;
+  users.users.arya.shell = pkgs.fish;
   networking.networkmanager.enable = true;
   networking.interfaces.ens18.ipv4.addresses = [
     { address = "192.168.1.107"; prefixLength = 24; }
