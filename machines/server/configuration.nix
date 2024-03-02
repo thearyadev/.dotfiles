@@ -37,7 +37,7 @@ in
   services.tailscale = {
     enable = true;
     #useRoutingFeatures = "server";
-    extraUpFlags = [ "--advertise-exit-node"];
+    extraUpFlags = [ "--advertise-exit-node" "--advertise-routes=192.168.1.0/24"];
   };
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
