@@ -20,7 +20,7 @@
      homeConfigurations = {
         arya = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ "/home/arya/.dotfiles/machines/development/home.nix" ];
+          modules = [ "/home/arya/.dotfiles/machines/server/home.nix" ];
         };
       };
 

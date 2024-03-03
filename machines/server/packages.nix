@@ -15,7 +15,6 @@ in
     echo meow
     '')
 
-lskdjasldj
     
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
