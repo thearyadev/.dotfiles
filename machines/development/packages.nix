@@ -13,6 +13,7 @@ in
     pkgs.nodejs_21
     pkgs.ffmpeg
     pkgs.bun
+    pkgs.prisma-engines
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
     '')
