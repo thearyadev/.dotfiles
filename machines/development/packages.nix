@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 let
-  configPath = "~/.dotfiles/machines/server/";
+  configPath = "~/.dotfiles/machines/development/";
 in 
 {
   home.packages = [
