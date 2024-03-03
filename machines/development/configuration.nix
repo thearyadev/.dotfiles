@@ -27,6 +27,15 @@
   # Set your time zone.
   time.timeZone = "America/Toronto";
   users.users.arya.shell = pkgs.fish;
+  programs.fish.interactiveShellInit = ''
+      export PRISMA_SCHEMA_ENGINE_BINARY="${pkgs.prisma-engines}/bin/schema-engine"
+      export PRISMA_QUERY_ENGINE_BINARY="${pkgs.prisma-engines}/bin/query-engine"
+      export PRISMA_QUERY_ENGINE_LIBRARY="${pkgs.prisma-engines}/lib/libquery_engine.node"
+      export PRISMA_FMT_BINARY="${pkgs.prisma-engines}/bin/prisma-fmt"
+  '';
+
+
+
   # Select internationalisation properties.
   i18n.defaultLocale = "en_CA.UTF-8";
 
