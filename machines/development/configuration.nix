@@ -92,7 +92,7 @@
 	enable =  true;
 	passwordAuthentication = true;
 };
-  i#networking.firewall.allowedTCPPorts = [ 22 3000 ];
+  #networking.firewall.allowedTCPPorts = [ 22 3000 ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
