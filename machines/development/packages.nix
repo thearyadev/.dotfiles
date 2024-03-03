@@ -11,6 +11,7 @@ in
     pkgs.gcc
     pkgs.poetry
     pkgs.nodejs_21
+    pkgs.ffmpeg
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
     '')

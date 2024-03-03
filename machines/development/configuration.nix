@@ -57,7 +57,16 @@
   environment.sessionVariables = {
     LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib";
   };
-
+  fileSystems = {
+    "/mnt/skies" = {
+      device = "192.168.1.17:/mnt/skies/skies-data";
+      fsType = "nfs";
+    };
+   "/mnt/vega" = {
+      device = "192.168.1.17:/mnt/vega/vega-data";
+      fsType = "nfs";
+    };
+  };
 
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
