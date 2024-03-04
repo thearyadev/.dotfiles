@@ -65,6 +65,9 @@ require('lazy').setup({
 		},
 	},
 	{
+		"ojroques/nvim-osc52"
+	},
+	{
 		'hrsh7th/nvim-cmp',
 		dependencies = {
 			'L3MON4D3/LuaSnip',

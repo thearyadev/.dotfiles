@@ -16,8 +16,23 @@ vim.o.timeoutlen = 300
 vim.o.completeopt = "menuone,noselect"
 vim.o.termguicolors = true
 
+vim.o.clipboard = 'unnamedplus'
 
+-- vim.g.clipboard = {
+--   name = "xsel",
+--   copy ={
+--     ["+"] = 'xsel --nodetach -i -b',
+--     ["*"] = 'xsel --nodetach -i -p',
+--   },
+--   paste = {
+--     ["+"] = 'xsel -o -b',
+--     ["*"] = 'xsel -o -p'
+--   },
+--   cache_enabled = 1
 
+-- }
+
+vim.keymap.set("v", "<leader>c", '<cmd>lua require("osc52").copy_visual()<CR>', { desc = "Copy (to clipboard)" })
 vim.keymap.set({"n", "v"}, "<Space>", "<Nop>", {silent = true})
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
@@ -102,5 +117,4 @@ vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc
 vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
-
 
