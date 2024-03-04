@@ -91,7 +91,9 @@
   services.openssh = {
 	enable =  true;
 	passwordAuthentication = true;
-	forwardX11  = true;
+	settings = {
+	  X11Forwarding = true;
+	};
 };
   #networking.firewall.allowedTCPPorts = [ 22 3000 ];
   # Some programs need SUID wrappers, can be configured further or are
