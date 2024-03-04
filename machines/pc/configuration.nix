@@ -136,6 +136,13 @@ in
     "nvidia-drm.modeset=1"
     "initcall_blacklist=simpledrm_platform_driver_init"
   ];
+  programs.ssh.extraConfig = ''
+  Host server
+    HostName 192.168.1.166
+    User arya
+    ForwardX11 yes
+    ForwardX11Trusted yes
+  '';
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
