@@ -6,7 +6,7 @@
   home.stateVersion = "23.11";
   home.sessionVariables = { };
   imports = [
-    ../../legacy/dotfiles.nix
+    ./dotfiles.nix
     ./packages.nix
     ../../modules/hyprland/hyprland.nix
     ../../modules/waybar/waybar.nix
