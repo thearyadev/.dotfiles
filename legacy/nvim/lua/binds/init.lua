@@ -63,6 +63,7 @@ require("telescope").setup {
 			}
 		},
 	},
+	file_ignore_patterns = { "node_modules" }
 }
 
 local function find_git_root()
