@@ -14,6 +14,7 @@ in
     pkgs.ffmpeg
     pkgs.bun
     pkgs.prisma-engines
+    pkgs.go_1_20 
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
     '')
