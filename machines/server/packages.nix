@@ -10,6 +10,7 @@ in
     pkgs.neovim
     pkgs.gcc
     pkgs.bash
+    pkgs.ripgrep
 
     (pkgs.writeShellScriptBin "meowmeow" ''
     echo meow

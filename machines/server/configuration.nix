@@ -20,6 +20,7 @@ in
     enable = true;
     settings = {
       PasswordAuthentication = true;
+      X11Forwarding = true;
     };
   };
   hardware.opengl = {
