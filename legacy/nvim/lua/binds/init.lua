@@ -53,6 +53,7 @@ vim.keymap.set("t", "<C-/>", "<C-\\><C-N>", { noremap = true, silent = true})
 
 vim.keymap.set('v', '<C-/>', ":'<,'>Commentary<CR>", {noremap = true, silent = true})
 vim.keymap.set('n', '<C-/>', ":Commentary<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>i", function() require("trouble").toggle() end)
 
 -- Telescope 
 
