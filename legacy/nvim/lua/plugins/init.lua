@@ -185,5 +185,11 @@ require('lazy').setup({
 			"MunifTanjim/nui.nvim",
 			"rcarriga/nvim-notify",
 		}
+	},
+	{
+		"folke/trouble.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		opts = {},
 	}
+
 }, {})
