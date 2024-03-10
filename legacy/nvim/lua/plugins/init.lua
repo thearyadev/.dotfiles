@@ -173,4 +173,8 @@ require('lazy').setup({
 		},
 
 	},
+	{ 
+		"chrisgrieser/nvim-puppeteer",
+		lazy = false, 
+	},
 }, {})
