@@ -43,6 +43,12 @@ require('lazy').setup({
 		priority = 1001,
 	},
 	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
+	{
 		'nvim-tree/nvim-tree.lua',
 		version = "*",
 		dependencies = {
