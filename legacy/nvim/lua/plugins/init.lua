@@ -177,4 +177,13 @@ require('lazy').setup({
 		"chrisgrieser/nvim-puppeteer",
 		lazy = false, 
 	},
+	{
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		opts = {},
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+			"rcarriga/nvim-notify",
+		}
+	}
 }, {})
