@@ -45,6 +45,7 @@ vim.cmd [[autocmd VimEnter * NvimTreeOpen]]
 vim.cmd [[autocmd VimEnter * wincmd p]]
 
 vim.keymap.set("n", "<leader>tr", ":NvimTreeToggle<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>f", ":Format<CR>", {noremap = true})
 vim.keymap.set("n", "<leader>n", ":ASToggle<CR>", {})
 vim.keymap.set("n", "<leader>v", ":lua require('nvterm.terminal').new 'vertical'<CR>")
 vim.keymap.set("n", "<leader>h", ":lua require('nvterm.terminal').new 'horizontal'<CR>")
