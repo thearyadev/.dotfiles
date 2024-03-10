@@ -49,7 +49,7 @@ vim.keymap.set("n", "<leader>f", ":Format<CR>", {noremap = true})
 vim.keymap.set("n", "<leader>n", ":ASToggle<CR>", {})
 vim.keymap.set("n", "<leader>v", ":lua require('nvterm.terminal').new 'vertical'<CR>")
 vim.keymap.set("n", "<leader>h", ":lua require('nvterm.terminal').new 'horizontal'<CR>")
-vim.keymap.set("t", "<C-Esc>", "<C-\\><C-N>", { noremap = true, silent = true})
+vim.keymap.set("t", "<C-/>", "<C-\\><C-N>", { noremap = true, silent = true})
 
 vim.keymap.set('v', '<C-/>', ":'<,'>Commentary<CR>", {noremap = true, silent = true})
 vim.keymap.set('n', '<C-/>', ":Commentary<CR>", {noremap = true, silent = true})
