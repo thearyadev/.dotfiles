@@ -30,7 +30,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	pattern = "*",
 })
 pcall(require('telescope').load_extension, 'fzf')
-
+vim.wo.relativenumber = true
 
 vim.defer_fn(function()
   require('nvim-treesitter.configs').setup {
