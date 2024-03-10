@@ -44,6 +44,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 vim.cmd [[autocmd VimEnter * NvimTreeOpen]]
 vim.cmd [[autocmd VimEnter * wincmd p]]
 
+vim.keymap.set("n", "<leader>t", ":NvimTreeToggle", {noremap = true, silent = true})
 vim.keymap.set("n", "<leader>n", ":ASToggle<CR>", {})
 vim.keymap.set("n", "<leader>v", ":lua require('nvterm.terminal').new 'vertical'<CR>")
 vim.keymap.set("n", "<leader>h", ":lua require('nvterm.terminal').new 'horizontal'<CR>")
