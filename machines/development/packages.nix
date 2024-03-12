@@ -16,6 +16,7 @@ in
     pkgs.prisma-engines
     pkgs.go_1_20
     pkgs.ripgrep
+    pkgs.bfg-repo-cleaner
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
     '')
