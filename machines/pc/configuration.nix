@@ -74,7 +74,7 @@ in
     vesktop
     grim
     hyprpaper
-    xdg-desktop-portal-hyprland
+    unstable.xdg-desktop-portal-hyprland
     slurp
     xsel
     alsa-utils
