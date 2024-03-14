@@ -8,7 +8,6 @@
   imports = [
     ./dotfiles.nix
     ./packages.nix
-    ../../modules/hyprland/hyprland.nix
     ../../modules/waybar/waybar.nix
     ../../modules/kitty/kitty.nix
   ];

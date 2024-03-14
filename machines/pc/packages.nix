@@ -5,10 +5,6 @@ in
 
 {
   home.packages = [
-    pkgs.playerctl
-    pkgs.nixfmt
-    pkgs.htop
-    pkgs.xfce.thunar
 
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
