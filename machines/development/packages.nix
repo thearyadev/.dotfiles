@@ -17,6 +17,8 @@ in
     pkgs.go_1_20
     pkgs.ripgrep
     pkgs.bfg-repo-cleaner
+    pkgs.unzip
+    pkgs.thefuck
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
     '')
