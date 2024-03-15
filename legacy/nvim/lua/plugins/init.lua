@@ -201,4 +201,7 @@ require('lazy').setup({
 		"ThePrimeagen/vim-be-good"
 	}
 
-}, {})
+}, 
+{
+	lockfile = "~/lazy-lock.json"
+})
