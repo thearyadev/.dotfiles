@@ -5,6 +5,7 @@ require('lazy').setup({
 	"pocco81/auto-save.nvim",
 	"edluffy/hologram.nvim",
 	"tpope/vim-sleuth",
+	"sbdchd/neoformat",
 	{
 		"nvim-treesitter/nvim-treesitter",
 		dependencies = {

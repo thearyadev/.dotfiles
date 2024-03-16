@@ -5,6 +5,8 @@ alias vim 'nvim'
 alias ll 'exa -l -g --icons'
 alias lla 'll -a'
 
+thefuck --alias | source
+
 fish_config theme choose "Rosé Pine"
 
 function fish_prompt -d "Write out the prompt"

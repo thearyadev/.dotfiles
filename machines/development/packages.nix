@@ -19,6 +19,8 @@ in
     pkgs.bfg-repo-cleaner
     pkgs.unzip
     pkgs.thefuck
+    pkgs.stylua
+    pkgs.lua-language-server
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
     '')
