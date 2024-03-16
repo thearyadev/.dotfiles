@@ -34,6 +34,7 @@
       export PRISMA_FMT_BINARY="${pkgs.prisma-engines}/bin/prisma-fmt"
   '';
 
+  programs.nix-ld.enable = true;
 
 
   # Select internationalisation properties.
