@@ -203,6 +203,11 @@ require("lazy").setup({
 	{
 		"ThePrimeagen/vim-be-good",
 	},
+	{
+		"davidmh/mdx.nvim",
+		config = true,
+		dependencies = { "nvim-treesitter/nvim-treesitter" },
+	},
 }, {
 	lockfile = "~/lazy-lock.json",
 })
