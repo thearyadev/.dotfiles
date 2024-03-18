@@ -1,0 +1,51 @@
+[
+  {
+    "clock": {
+      "format": "{:%I:%M %m-%d-%Y}"
+    },
+    "cpu": {
+      "format": "{usage}%",
+      "interval": 3
+    },
+    "disk": {
+      "format": "   {free}"
+    },
+    "layer": "top",
+    "memory": {
+      "format": "   {used} / {total}Gib",
+      "interval": 3
+    },
+    "modules-center": [
+      "hyprland/workspaces"
+    ],
+    "modules-left": [
+      "disk",
+      "memory",
+      "cpu",
+      "battery"
+    ],
+    "modules-right": [
+      "wireplumber",
+      "network",
+      "clock"
+    ],
+    "network": {
+      "format": "{ifname} - {bandwidthTotalBits}",
+      "interval": 3
+    },
+    "wireplumber": {
+      "format": "{icon}   {volume}% - {node_name}",
+      "format-icons": [
+        "",
+        "",
+        ""
+      ],
+      "format-muted": "AUDIO MUTED",
+      "max-volume": 120.0,
+      "on-click": "helvum"
+    },
+    "wlr/workspaces": {
+      "format": "{icon}"
+    }
+  }
+]

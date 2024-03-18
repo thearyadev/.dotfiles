@@ -8,8 +8,6 @@
   imports = [
     ./dotfiles.nix
     ./packages.nix
-    ../../modules/waybar/waybar.nix
-    ../../modules/kitty/kitty.nix
   ];
 
   programs.home-manager.enable = true;
