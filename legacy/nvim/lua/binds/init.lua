@@ -126,3 +126,5 @@ vim.keymap.set("n", "<leader>sr", require("telescope.builtin").resume, { desc = 
 vim.api.nvim_set_keymap("n", "<leader>rb", "<cmd>lua vim.cmd [[bufdo e!]]<CR>", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap("n", "<leader>f", "<cmd>lua vim.cmd [[Neoformat]]<CR>", { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
