@@ -1,18 +1,20 @@
 [
   {
-    "clock": {
-      "format": "{:%I:%M %m-%d-%Y}"
+    "custom/clock": {
+      "exec": "date +'%A %B %d - %I:%M %p'",
+      "interval": 1,
+      "tooltip": false
     },
     "cpu": {
       "format": "{usage}%",
       "interval": 3
     },
     "disk": {
-      "format": "   {free}"
+      "format": " {free}"
     },
     "layer": "top",
     "memory": {
-      "format": "   {used} / {total}Gib",
+      "format": " {used} / {total}Gib",
       "interval": 3
     },
     "modules-center": [
@@ -27,22 +29,22 @@
     "modules-right": [
       "wireplumber",
       "network",
-      "clock"
+      "custom/clock"
     ],
     "network": {
-      "format": "{ifname} - {bandwidthTotalBits}",
+      "format": "{bandwidthTotalBits}",
       "interval": 3
     },
     "wireplumber": {
-      "format": "{icon}   {volume}% - {node_name}",
+      "format": "{icon} {volume}%",
       "format-icons": [
         "",
         "",
         ""
       ],
-      "format-muted": "AUDIO MUTED",
+      "format-muted": "mute",
       "max-volume": 120.0,
-      "on-click": "helvum"
+      "on-click": "pavucontrol"
     },
     "wlr/workspaces": {
       "format": "{icon}"

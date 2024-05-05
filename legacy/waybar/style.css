@@ -1,3 +1,5 @@
+@import "mocha.css";
+
 * {
   font-family: "FiraCode Nerd Font", "Font Awesome 6 Free";
   font-size: 15px;
@@ -21,5 +23,30 @@ window#waybar {
 #wireplumber.muted,
 #clock {
   padding: 5px 15px;
+}
+
+
+#workspaces button {
+  padding: 0 0.5em;
+  color: @text;
+  margin: 0.25em;
+}
+
+#workspaces button.empty{
+  color: @overlay0;
+}
+
+#workspaces button.visible {
+  color: @peach;
+}
+
+#workspaces button.active {
+  color: @teal
+}
+
+#workspaces button.urgent {
+  background-color: @red;
+  border-radius: 1em;
+  color: @text;
 }
 
