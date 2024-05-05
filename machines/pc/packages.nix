@@ -5,7 +5,15 @@ in
 
 {
   home.packages = [
-
+    pkgs.neovim
+    pkgs.fish
+    pkgs.neofetch
+    pkgs.dunst
+    pkgs.waybar
+    pkgs.hyprpaper
+    pkgs.slurp
+    pkgs.wl-clipboard
+    pkgs.brave
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
     '')
