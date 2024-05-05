@@ -86,6 +86,8 @@
     python311
     python312
     nodejs_21
+    dotnet-sdk_8
+    dotnet-runtime_8
     libstdcxx5
     gcc-unwrapped
   ];
