@@ -15,6 +15,10 @@ in
     pkgs.wl-clipboard
     pkgs.brave
     pkgs.fira-code-nerdfont
+    pkgs.htop
+    pkgs.foot
+    pkgs.wayshot
+    pkgs.imagemagick
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
     '')
