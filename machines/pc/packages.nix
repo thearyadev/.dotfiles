@@ -19,6 +19,7 @@ in
     pkgs.foot
     pkgs.wayshot
     pkgs.imagemagick
+    pkgs.dfu-programmer
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
     '')
