@@ -11,7 +11,7 @@ in
     pkgs.gcc
     pkgs.bash
     pkgs.ripgrep
-
+    pkgs.nodejs_21
     (pkgs.writeShellScriptBin "meowmeow" ''
     echo meow
     '')
