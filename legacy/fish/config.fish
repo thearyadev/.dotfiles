@@ -15,3 +15,4 @@ end
 
 set -gx PATH /home/arya/.cargo/bin $PATH
 set -gx PATH /home/arya/.nix-profile/bin $PATH
+set -gx PATH /home/arya/.bun/bin $PATH
