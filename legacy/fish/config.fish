@@ -13,3 +13,5 @@ function fish_prompt -d "Write out the prompt"
         (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
 end
 
+set -gx PATH /home/arya/.cargo/bin $PATH
+set -gx PATH /home/arya/.nix-profile/bin $PATH

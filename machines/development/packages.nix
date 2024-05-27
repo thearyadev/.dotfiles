@@ -4,24 +4,6 @@ let
 in 
 {
   home.packages = [
-    pkgs.nixfmt
-    pkgs.htop
-    pkgs.fish
-    pkgs.neovim
-    pkgs.gcc
-    pkgs.poetry
-    pkgs.nodejs_21
-    pkgs.ffmpeg
-    pkgs.bun
-    pkgs.prisma-engines
-    pkgs.go_1_20
-    pkgs.ripgrep
-    pkgs.bfg-repo-cleaner
-    pkgs.unzip
-    pkgs.thefuck
-    pkgs.stylua
-    pkgs.lua-language-server
-    pkgs.gnumake
     (pkgs.writeShellScriptBin "nixos-flake-switch" ''
       sudo nixos-rebuild switch --flake ./#default --impure
     '')
