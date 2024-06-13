@@ -128,3 +128,23 @@ vim.api.nvim_set_keymap("n", "<leader>rb", "<cmd>lua vim.cmd [[bufdo e!]]<CR>", 
 vim.api.nvim_set_keymap("n", "<leader>f", "<cmd>lua vim.cmd [[Neoformat]]<CR>", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+-- Add this to your init.lua or a sourced Lua file
+vim.api.nvim_create_user_command(
+    'InsertReactFragment',
+    function()
+        local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+        local lines = vim.api.nvim_buf_get_lines(0, row - 1, row, false)
+        local line = lines[1]
+        local indent = line:match("^%s*")
+
+        local insert_text = indent .. "<> </>"
+        vim.api.nvim_buf_set_lines(0, row, row, false, {insert_text})
+
+        vim.api.nvim_win_set_cursor(0, {row, #indent + 2})
+    end,
+    {nargs = 0}
+)
+
+-- Alias :Frag to :InsertReactFragment
+vim.cmd("command! Frag InsertReactFragment")
+
