@@ -7,6 +7,7 @@ require("lazy").setup({
 	"tpope/vim-sleuth",
 	"sbdchd/neoformat",
 	"github/copilot.vim",
+	"xiyaowong/transparent.nvim",
 	{
 		"nvim-treesitter/nvim-treesitter",
 		dependencies = {
