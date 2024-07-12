@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  home.file.".config/fish/".source = ../../legacy/fish;
+  #home.file.".config/fish/".source = ../../legacy/fish;
   home.file.".config/neofetch/".source = ../../legacy/neofetch;
   home.file.".config/rofi/".source = ../../legacy/rofi;
   home.file.".config/dunst/".source = ../../legacy/dunst;
